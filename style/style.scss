@@ -23,6 +23,63 @@ $body-font: 'Lato', sans-serif;
   }
 }
 
+@mixin hero-section{
+  background-image: url('../asset/images/hero-section/background-image.png');
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: $base-color;
+
+  .hero-container{
+    height: 100vh;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    margin: 0 auto;
+
+    .hero-heading-minor{
+      font-family: $header-font;
+      font-size: 30px;
+      font-weight: 500;
+      color: $secondary-color;
+    }
+
+    .hero-heading-major{
+      font-family: $header-font;
+      font-size: 45px;
+      font-weight: 900;
+      color: $secondary-color;
+      line-height: 52px;
+      
+    }
+
+    .hero-paragraph{
+      font-family: $body-font;
+      font-size: 1.2rem;
+      padding: 10px;
+      border: 3px solid rgb(230, 226, 226);
+      background-color: $base-color;
+    }
+
+    .hero-time{
+      font-family: $header-font;
+      font-size: 20px;
+      color: $primary-color;
+      font-size: 1.4rem;
+      font-weight: 700;
+    }
+
+    .hero-loc{
+      font-family: $body-font;
+      font-size: 1rem;
+      color: $primary-color;
+    }
+  }
+
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -118,60 +175,7 @@ a{
 }
 
 .hero-section{
-  background-image: url('../asset/images/hero-section/background-image.png');
-  height: 100vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: $base-color;
-
-  .hero-container{
-    height: 100vh;
-    width: 90%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    gap: 15px;
-    margin: 0 auto;
-
-    .hero-heading-minor{
-      font-family: $header-font;
-      font-size: 30px;
-      font-weight: 500;
-      color: $secondary-color;
-    }
-
-    .hero-heading-major{
-      font-family: $header-font;
-      font-size: 45px;
-      font-weight: 900;
-      color: $secondary-color;
-      line-height: 52px;
-      
-    }
-
-    .hero-paragraph{
-      font-family: $body-font;
-      font-size: 1.2rem;
-      padding: 10px;
-      border: 3px solid rgb(230, 226, 226);
-      background-color: $base-color;
-    }
-
-    .hero-time{
-      font-family: $header-font;
-      font-size: 20px;
-      color: $primary-color;
-      font-size: 1.4rem;
-      font-weight: 700;
-    }
-
-    .hero-loc{
-      font-family: $body-font;
-      font-size: 1rem;
-      color: $primary-color;
-    }
-  }
-
+  @include hero-section();
 }
 
 .main-program-section{
@@ -262,7 +266,7 @@ a{
   .feat-speaker-container{
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 80vh;
     padding-bottom: 4.5rem;
 
     .speakers-container{
@@ -390,6 +394,153 @@ a{
 
   
 }
+
+// About page
+.about-hero-section{
+  @include hero-section();
+  min-height: 100vh;
+  
+  .hero-container{
+    width: 80%;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    height: 100%;
+
+    .hero-mail{
+      font-family: $body-font;
+      font-size: 1.3rem;
+      color: $secondary-color;
+    }
+  }
+}
+
+.about-logo-section{
+  background-color: white;
+  border-block: 1px $primary-color solid;
+
+  .about-logo-header{
+    @include header();
+
+    .header-text{
+      font-size: 25px;
+      color: $primary-color;
+    }
+
+    padding: 2rem 0 1.5rem 0;
+
+  }
+  .logo-container{
+    font-family: $body-font;
+    padding-bottom: 30px;
+    margin: 0 auto;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  
+
+
+    .logo-description{
+      text-align: center;
+      width: 60%;
+    }
+    .event-logo{
+      border: 1px solid $primary-color;
+      width: 250px;
+      padding: 20px;
+
+      .event-logo-img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+
+.past-summit-section{
+  border-block: 1px $primary-color solid;
+  background-color: white;
+
+  .past-summit-header{
+    @include header();
+
+    .header-text{
+      font-size: 25px;
+      color: $primary-color;
+    }
+
+    padding: 2rem 0 1.5rem 0;   
+  }
+
+  .past-summit-container{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    padding-bottom: 30px;
+
+    .past-parag{
+      font-family: $body-font;
+      font-size: 1rem;
+      color: $primary-color;
+    }
+
+    .picture-event-container{
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+  
+      .past-event{
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+  
+        .event-img{
+          width: 100%;
+          display: block;
+          height: auto;
+        }
+
+        .color-overlay{
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          background-color: $secondary-color;
+          opacity: 0.7;
+          width: 100%;
+          height:0;
+          overflow: hidden;
+          transition: 0.4s ease-in;
+
+          p{
+            position: absolute;
+            text-align: center;
+            top: 40%;
+            font-family: $header-font;
+            font-weight: 800;
+            font-size: 1.5rem;
+            color: white;
+            width: 100%;
+          }
+
+        }
+      }
+
+      .past-event:hover .color-overlay{
+       height: 100%;
+      }
+
+    }
+  }
+
+  
+}
+
 
 
 
@@ -569,6 +720,86 @@ a{
       }
     }
   
+  }
+
+  .past-summit-section{
+    border-block: 1px $primary-color solid;
+    background-color: white;
+  
+    .past-summit-header{
+      @include header();
+  
+      .header-text{
+        font-size: 25px;
+        color: $primary-color;
+      }
+  
+      padding: 2rem 0 1.5rem 0;   
+    }
+  
+    .past-summit-container{
+      width: 80%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      text-align: center;
+  
+      .past-parag{
+        font-family: $body-font;
+        font-size: 1rem;
+        color: $primary-color;
+      }
+  
+      .picture-event-container{
+        flex-direction: row;
+    
+        .past-event{
+          width: 100%;
+          height: 262px;
+          margin: 0 auto;
+          position: relative;
+    
+          .event-img{
+            width: 100%;
+            height: 100%;
+            display: block;
+          }
+  
+          .color-overlay{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: $secondary-color;
+            opacity: 0.7;
+            width: 100%;
+            height:0;
+            overflow: hidden;
+            transition: 0.4s ease-in;
+  
+            p{
+              position: absolute;
+              text-align: center;
+              top: 40%;
+              font-family: $header-font;
+              font-weight: 800;
+              font-size: 1.5rem;
+              color: white;
+              width: 100%;
+            }
+  
+          }
+        }
+  
+        .past-event:hover .color-overlay{
+         height: 100%;
+        }
+  
+      }
+    }
+  
+    
   }
 
 }
