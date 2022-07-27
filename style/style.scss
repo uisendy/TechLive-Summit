@@ -1,7 +1,7 @@
 $base-color: #d3d3d3;
 $primary-color: #272a31;
 $secondary-color: #ec5242;
-$header-font: 'COCOGOOSE', sans-serif;
+$header-font: 'Montserrat', sans-serif;
 $body-font: 'Lato', sans-serif;
 
 @mixin header{
@@ -136,9 +136,8 @@ a{
     .hero-heading-minor{
       font-family: $header-font;
       font-size: 30px;
-      font-weight: 300;
+      font-weight: 500;
       color: $secondary-color;
-      
     }
 
     .hero-heading-major{
@@ -163,6 +162,7 @@ a{
       font-size: 20px;
       color: $primary-color;
       font-size: 1.4rem;
+      font-weight: 700;
     }
 
     .hero-loc{
@@ -176,9 +176,10 @@ a{
 
 .main-program-section{
   background-image: url(../asset/images/main-program-section/main-program-background.svg);
-  height: 100vh;
+  min-height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
+  padding: 30px 0;
 
   .main-program-container{
     display: flex;
@@ -247,19 +248,149 @@ a{
 
 .feat-speaker-section{
   background-color: $base-color;
-  height: 100vh;
+  min-height: 100vh;
+
+  .feat-speaker-header{
+    @include header;
+    padding: 3.5rem 0;
+
+    .header-text{
+      color: #272a31;
+    }
+  }
 
   .feat-speaker-container{
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-bottom: 4.5rem;
 
-    .feat-program-header{
-      @include header;
-      .header-text{
-        color: #272a31;
+    .speakers-container{
+      font-family: $body-font;
+      width: 90%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      justify-content: center;
+      align-items: center;
+
+
+      .each-speaker{
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        column-gap: 10px;
+        
+
+        .speaker-img-holder{
+          width: 120px;
+          height: 120px;
+          justify-self: end;
+
+          .speaker-img{
+            height: 100%;
+          }
+
+        }
+
+        .speaker-desc{
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+
+          .header-desc{
+            color: $primary-color;
+            font-size: 1rem;
+            font-weight: 900;
+          }
+
+          .parag-desc{
+            font-size: 1rem;
+            color: $secondary-color;
+            font-style: italic;
+          }
+
+          .line{
+            border-top: $primary-color 2px solid;
+            width: 2rem;
+          }
+
+          .speaker-full-desc{
+            color: $primary-color;
+            font-size: 1rem;
+
+
+          }
+
+        }
       }
     }
   }
+
 }
+
+.partner-section{
+  background-color: #272a31;
+
+  .partner-header{
+    @include header;
+    padding: 2rem 0 1.5rem 0;
+  }
+
+  .partner-container{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   margin: 0 auto;
+   width: 90%;
+   column-gap: 30px;
+   row-gap: 20px;
+   padding-bottom: 3.5rem;
+   
+   .partner-img-container{
+      width: 90px;
+    .partner-image{
+      width: 100%;
+    }
+   }
+  }
+}
+
+.footer-section{
+  background-color: whitesmoke;
+  font-family: $body-font;
+
+  .footer-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    gap: 15px;
+    padding: 20px 0;
+    width: 90%;
+  
+
+    .footer-logo-cont{
+      width: 200px;
+
+      .footer-img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .is-tech-contact{
+      font-size: 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+
+  
+}
+
 
 
 
@@ -358,10 +489,10 @@ a{
 
   .main-program-section{
     height: 80vh;
+    padding: 0;
     
   
     .main-program-container{
-      height: 80vh;
       justify-content: center;
       gap: 2.5rem;
 
@@ -424,5 +555,20 @@ a{
   
   }
 
+  .feat-speaker-section{
+    min-height: 80vh;
+  
+    .feat-speaker-container{
+  
+      .speakers-container{
+        width: 80%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: flex-start;
+  
+      }
+    }
+  
+  }
 
 }
