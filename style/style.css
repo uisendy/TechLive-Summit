@@ -34,13 +34,22 @@ a {
 .nav-bar-section .nav-bar .nav-links .nav-link-list {
   width: 70%;
   margin: 0 auto;
-  padding-block: 100px;
+  padding-bottom: 100px;
+  padding-top: 70px;
 }
 .nav-bar-section .nav-bar .nav-links .nav-link {
   font-size: 24px;
   padding: 30px 0 5px 0;
   border-bottom: rgba(242, 183, 177, 0.3) solid 1px;
   color: #d3d3d3;
+}
+.nav-bar-section .nav-bar .nav-links .nav-link img {
+  width: 50%;
+  padding-bottom: 2rem;
+}
+.nav-bar-section .nav-bar .nav-links .nav-link:first-child {
+  padding: 0;
+  border-bottom: none;
 }
 .nav-bar-section .nav-bar .nav-links.is-active {
   left: 0;
@@ -502,14 +511,12 @@ a {
   gap: 20px;
 }
 .past-summit-section .past-summit-container .picture-event-container .past-event {
-  width: 100%;
   margin: 0 auto;
-  position: relative;
 }
 .past-summit-section .past-summit-container .picture-event-container .past-event .event-img {
   width: 100%;
   display: block;
-  height: auto;
+  height: 100%;
 }
 .past-summit-section .past-summit-container .picture-event-container .past-event .color-overlay {
   position: absolute;
@@ -547,9 +554,10 @@ a {
   }
   .nav-bar-section {
     font-family: "Lato", sans-serif;
-    background: #e9e4e4;
+    background: whitesmoke;
     position: fixed;
     width: 100%;
+    z-index: 20;
   }
   .nav-bar-section .nav-bar {
     position: relative;
@@ -670,6 +678,12 @@ a {
     grid-template-columns: 1fr 1fr;
     align-items: flex-start;
   }
+  .partner-section .partner-container {
+    padding-bottom: 4.5rem;
+  }
+  .partner-section .partner-container .partner-img-container {
+    width: 120px;
+  }
   .past-summit-section {
     border-block: 1px #272a31 solid;
     background-color: white;
@@ -713,7 +727,6 @@ a {
   }
   .past-summit-section .past-summit-container .picture-event-container .past-event {
     width: 100%;
-    height: 262px;
     margin: 0 auto;
     position: relative;
   }

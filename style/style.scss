@@ -117,7 +117,8 @@ a{
       .nav-link-list{
         width: 70%;
         margin: 0 auto;
-        padding-block: 100px;
+        padding-bottom: 100px;
+        padding-top: 70px;
       }
   
       .nav-link{
@@ -125,12 +126,24 @@ a{
         padding: 30px 0 5px 0 ;
         border-bottom: rgba(242, 183, 177, 0.3) solid 1px ;
         color: $base-color;
+
+        img{
+          width: 50%;
+          padding-bottom: 2rem;
+        }
+      }
+
+      .nav-link:first-child{
+        padding: 0;
+        border-bottom: none;
       }
     }
   
     .nav-links.is-active{
       left: 0;
     }
+
+
     
     .hamburger-menu{
       display: block;
@@ -495,14 +508,12 @@ a{
       gap: 20px;
   
       .past-event{
-        width: 100%;
         margin: 0 auto;
-        position: relative;
   
         .event-img{
           width: 100%;
           display: block;
-          height: auto;
+          height: 100%;
         }
 
         .color-overlay{
@@ -558,9 +569,10 @@ a{
 
   .nav-bar-section{
     font-family: $body-font;
-    background: #e9e4e4;
+    background: whitesmoke;
     position: fixed;
     width: 100%;
+    z-index: 20;
   
     .nav-bar{
       position: relative;
@@ -722,6 +734,15 @@ a{
   
   }
 
+  .partner-section{
+    .partner-container{
+      padding-bottom: 4.5rem;
+     .partner-img-container{
+        width: 120px;
+     }
+    }
+  }
+
   .past-summit-section{
     border-block: 1px $primary-color solid;
     background-color: white;
@@ -756,7 +777,6 @@ a{
     
         .past-event{
           width: 100%;
-          height: 262px;
           margin: 0 auto;
           position: relative;
     
