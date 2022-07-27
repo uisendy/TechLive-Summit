@@ -75,6 +75,8 @@ $body-font: 'Lato', sans-serif;
       font-family: $body-font;
       font-size: 1rem;
       color: $primary-color;
+      background-color: $base-color;
+      padding: 10px;
     }
   }
 
@@ -258,6 +260,10 @@ a{
       margin: 0 auto;
       text-align: center;
     }
+
+    .join-btn:hover{
+      background-color: #9e271a;
+    }
   }
 
 
@@ -414,11 +420,16 @@ a{
   min-height: 100vh;
   
   .hero-container{
-    width: 80%;
+    width: 90%;
     align-items: center;
     text-align: center;
     min-height: 100vh;
     height: 100%;
+
+    .hero-heading-major{
+      font-size: 2rem;
+      line-height: 2.5rem;
+    }
 
     .hero-mail{
       font-family: $body-font;
@@ -430,7 +441,7 @@ a{
 
 .about-logo-section{
   background-color: white;
-  border-block: 1px $primary-color solid;
+  border-block: #7d7e82 1px solid;
 
   .about-logo-header{
     @include header();
@@ -473,7 +484,7 @@ a{
 }
 
 .past-summit-section{
-  border-block: 1px $primary-color solid;
+  border-bottom: #7d7e82 1px solid;
   background-color: white;
 
   .past-summit-header{
@@ -607,6 +618,10 @@ a{
           margin: 0;
           padding: 0;
         }
+
+        .logo-menu{
+          display: none;
+        }
   
         .nav-link{
           padding: 12px;
@@ -644,7 +659,7 @@ a{
       padding-top: 75.2px;
 
       .hero-paragraph{
-        width: 80%;
+        width: 60%;
       }
     }
 
@@ -732,6 +747,18 @@ a{
       }
     }
   
+  }
+
+  .about-hero-section{
+    
+    .hero-container{
+      width: 70%;
+
+      .hero-heading-major{
+        font-size: 3rem;
+        line-height: 3.5rem;
+      }
+    }
   }
 
   .partner-section{

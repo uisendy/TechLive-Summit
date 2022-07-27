@@ -43,7 +43,6 @@ const speakers = {
   }
 };
 
-
 const qs = (selector = '*', element = document) => {
   return element.querySelector(selector)
 }
@@ -61,6 +60,11 @@ mobileMenu.addEventListener('click', ()=> {
   mobileMenu.classList.toggle('is-active')
   navLinks.classList.toggle('is-active');
 });
+
+navLinks.addEventListener('click', () => {
+  mobileMenu.classList.toggle('is-active')
+  navLinks.classList.toggle('is-active');
+})
 
 
 Object.keys(speakers).forEach((eachSpeaker) => {
