@@ -8,7 +8,7 @@
 
 ## Hosting
 
-This Portfolio is hosted on GitHub Page. [Click here](https://uisendy.github.io/MyPortFolio/)
+This Portfolio is hosted on GitHub Page. [Click here](https://uisendy.github.io/TechLive-Summit/)
 
 ### Mobile version Screenshot:
 
@@ -64,7 +64,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to this wonderful UI by Cindy Shin in Behance. [@click-here](https://www.behance.net/adagio07) to view his page and see more about his projects. Thanks
+- Hat tip to this wonderful UI by [Cindy Shin](https://www.behance.net/adagio07) in Behance. [click here](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015) to view this project template and see more about his projects.⭐️⭐️⭐️⭐️⭐️
 
 - Hat tip to ![](https://img.shields.io/badge/Microverse-blueviolet) is where you Gain skills you need to get hired. Learn Online and connect to life changing opportunities. [Apply today](https://www.microverse.org/?grsf=uv064g)
 
