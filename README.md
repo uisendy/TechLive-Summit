@@ -38,14 +38,14 @@ This is a simple Tech-Summit Page which shows my Skills in Javascript, CSS and H
 
 ### Prerequisites
 
-Basic prequisites for opening a webpage as is required.
+Basic prerequisites for opening a webpage as is required.
 
 - A standard PC or Mac with -
 - Compatible and up to data browser both for PC and mobile.
 
 ### Usage
 
-This code can be used for educational 📘 and code viewing purposed. The copying of these code for other use would be liable to plagarism and practically and developmentally unaccceptable.
+This code can be used for educational 📘 and code viewing purposed. The copying of these code for other use would be liable to plagarism and practically and developmentally unacceptable.
 
 ## Authors
 
@@ -56,12 +56,6 @@ This code can be used for educational 📘 and code viewing purposed. The copyin
 
 ## 🤝 Contributor
 
-👤 **Emamnuel Essien**
-
-- GitHub: [@ehma90](https://github.com/ehma90)
-- Twitter: [@ehma_essien](https://twitter.com/ehma_essien)
-  Contributions, issues, and feature requests are welcome!
-
 If you find any bug or suggestion for improvement please Feel free to check the [issues page](../../issues/) with your proposed change.
 
 ## Show your support
@@ -70,11 +64,9 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
+- Hat tip to this wonderful UI by Cindy Shin in Behance. [@click-here](https://www.behance.net/adagio07) to view his page and see more about his projects. Thanks
+
 - Hat tip to ![](https://img.shields.io/badge/Microverse-blueviolet) is where you Gain skills you need to get hired. Learn Online and connect to life changing opportunities. [Apply today](https://www.microverse.org/?grsf=uv064g)
-
-## Update info
-
-The last update was the design of the Contact-me Section | Rev📅: 05:07:2022 | More to come. 🚀🚀🚀
 
 ## 📝 License
 
