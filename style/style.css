@@ -13,6 +13,10 @@ a {
   color: inherit;
 }
 
+.upper.nav {
+  display: none;
+}
+
 .conference-logo-container {
   display: none;
 }
@@ -612,6 +616,24 @@ a {
 }
 
 @media (min-width: 768px) {
+  .upper-nav {
+    background-color: #272a31;
+    height: 23px;
+  }
+
+  .upper-nav-links{
+    display: flex;
+    justify-content: flex-end;
+    padding-inline: 8%;
+    margin: 0 auto;
+    color: whitesmoke;
+    gap: 15px;
+    font-family: "Lato", sans-serif;
+    font-size: 13px;
+    align-items: flex-end;
+    padding-top: 4px;
+  }
+
   .conference-logo-container {
     display: flex;
     height: 48px;
@@ -623,7 +645,7 @@ a {
 
   .nav-bar-section {
     font-family: "Lato", sans-serif;
-    background: whitesmoke;
+    background: white;
     position: fixed;
     width: 100%;
     z-index: 20;
