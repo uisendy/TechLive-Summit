@@ -18,6 +18,8 @@ This Portfolio is hosted on GitHub Page. [Click here](https://uisendy.github.io/
 
 ![screenshot](./asset/images/Completed%20Project/Desktop%20Ver.PNG)
 
+#### View the Project's Quick Intro [here](https://www.loom.com/share/b46d9147b8024b09940373ad2bc95763)
+
 ### Objective
 
 This project's goals are as follows:
