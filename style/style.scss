@@ -1,4 +1,4 @@
-$base-color: #d3d3d3;
+$base-color: #f9f9f9;
 $primary-color: #272a31;
 $secondary-color: #ec5242;
 $header-font: 'Montserrat', sans-serif;
@@ -520,6 +520,7 @@ a{
   
       .past-event{
         margin: 0 auto;
+        position: relative;
   
         .event-img{
           width: 100%;

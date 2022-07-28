@@ -41,7 +41,7 @@ a {
   font-size: 24px;
   padding: 30px 0 5px 0;
   border-bottom: rgba(242, 183, 177, 0.3) solid 1px;
-  color: #d3d3d3;
+  color: #f9f9f9;
 }
 .nav-bar-section .nav-bar .nav-links .nav-link img {
   width: 50%;
@@ -82,14 +82,14 @@ a {
 }
 .nav-bar-section .nav-bar .hamburger-menu.is-active::before {
   transform: rotate(-45deg) translate(-8.5px, 5.5px);
-  background-color: #d3d3d3;
+  background-color: #f9f9f9;
 }
 .nav-bar-section .nav-bar .hamburger-menu.is-active .menu-icon {
   opacity: 0;
 }
 .nav-bar-section .nav-bar .hamburger-menu.is-active::after {
   transform: rotate(45deg) translate(-8.5px, -5.5px);
-  background-color: #d3d3d3;
+  background-color: #f9f9f9;
 }
 
 .hero-section {
@@ -97,7 +97,7 @@ a {
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #d3d3d3;
+  background-color: #f9f9f9;
 }
 .hero-section .hero-container {
   height: 100vh;
@@ -126,7 +126,7 @@ a {
   font-size: 1.2rem;
   padding: 10px;
   border: 3px solid rgb(230, 226, 226);
-  background-color: #d3d3d3;
+  background-color: #f9f9f9;
 }
 .hero-section .hero-container .hero-time {
   font-family: "Montserrat", sans-serif;
@@ -139,7 +139,7 @@ a {
   font-family: "Lato", sans-serif;
   font-size: 1rem;
   color: #272a31;
-  background-color: #d3d3d3;
+  background-color: #f9f9f9;
   padding: 10px;
 }
 
@@ -166,7 +166,7 @@ a {
   font-family: "Lato", sans-serif;
   font-size: 30px;
   text-align: center;
-  color: #d3d3d3;
+  color: #f9f9f9;
 }
 .main-program-section .main-program-container .program-header .header-line {
   width: 4rem;
@@ -199,14 +199,14 @@ a {
   color: #ec5242;
 }
 .main-program-section .main-program-container .programs-container .program:hover {
-  border: 3px solid #d3d3d3;
+  border: 3px solid #f9f9f9;
   cursor: pointer;
 }
 .main-program-section .main-program-container .join-btn {
   font-family: "Lato", sans-serif;
   font-size: 17px;
   background-color: #ec5242;
-  color: #d3d3d3;
+  color: #f9f9f9;
   padding: 30px;
   width: 75%;
   margin: 0 auto;
@@ -217,7 +217,7 @@ a {
 }
 
 .feat-speaker-section {
-  background-color: #d3d3d3;
+  background-color: #f9f9f9;
   min-height: 100vh;
 }
 .feat-speaker-section .feat-speaker-header {
@@ -230,7 +230,7 @@ a {
   font-family: "Lato", sans-serif;
   font-size: 30px;
   text-align: center;
-  color: #d3d3d3;
+  color: #f9f9f9;
 }
 .feat-speaker-section .feat-speaker-header .header-line {
   width: 4rem;
@@ -307,7 +307,7 @@ a {
   font-family: "Lato", sans-serif;
   font-size: 30px;
   text-align: center;
-  color: #d3d3d3;
+  color: #f9f9f9;
 }
 .partner-section .partner-header .header-line {
   width: 4rem;
@@ -365,7 +365,7 @@ a {
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #d3d3d3;
+  background-color: #f9f9f9;
   min-height: 100vh;
 }
 .about-hero-section .hero-container {
@@ -395,7 +395,7 @@ a {
   font-size: 1.2rem;
   padding: 10px;
   border: 3px solid rgb(230, 226, 226);
-  background-color: #d3d3d3;
+  background-color: #f9f9f9;
 }
 .about-hero-section .hero-container .hero-time {
   font-family: "Montserrat", sans-serif;
@@ -408,7 +408,7 @@ a {
   font-family: "Lato", sans-serif;
   font-size: 1rem;
   color: #272a31;
-  background-color: #d3d3d3;
+  background-color: #f9f9f9;
   padding: 10px;
 }
 .about-hero-section .hero-container {
@@ -442,7 +442,7 @@ a {
   font-family: "Lato", sans-serif;
   font-size: 30px;
   text-align: center;
-  color: #d3d3d3;
+  color: #f9f9f9;
 }
 .about-logo-section .about-logo-header .header-line {
   width: 4rem;
@@ -491,7 +491,7 @@ a {
   font-family: "Lato", sans-serif;
   font-size: 30px;
   text-align: center;
-  color: #d3d3d3;
+  color: #f9f9f9;
 }
 .past-summit-section .past-summit-header .header-line {
   width: 4rem;
@@ -523,6 +523,7 @@ a {
 }
 .past-summit-section .past-summit-container .picture-event-container .past-event {
   margin: 0 auto;
+  position: relative;
 }
 .past-summit-section .past-summit-container .picture-event-container .past-event .event-img {
   width: 100%;
@@ -579,7 +580,7 @@ a {
     align-items: center;
     padding-inline: 8%;
     margin: 0 auto;
-    color: #d3d3d3;
+    color: #f9f9f9;
     z-index: 130;
     box-shadow: 0px 7px 25px -10px rgba(150, 144, 150, 0.65);
   }
@@ -672,7 +673,7 @@ a {
     text-align: center;
   }
   .main-program-section .main-program-container .programs-container .program:hover {
-    border: 3px solid #d3d3d3;
+    border: 3px solid #f9f9f9;
     cursor: pointer;
   }
   .main-program-section .main-program-container .join-btn {
@@ -719,7 +720,7 @@ a {
     font-family: "Lato", sans-serif;
     font-size: 30px;
     text-align: center;
-    color: #d3d3d3;
+    color: #f9f9f9;
   }
   .past-summit-section .past-summit-header .header-line {
     width: 4rem;
