@@ -1,33 +1,24 @@
-import {speakers} from './dataFile.js'
-console.log(speakers);
+import speakers from './dataFile.js';
 
-const qs = (selector = '*', element = document) => {
-  return element.querySelector(selector)
-}
+const qs = (selector = '*', element = document) => element.querySelector(selector);
 
-const qsa = (selector = '*', element = document) => {
-  return [...element.querySelector(selector)]
-}
+const mobileMenu = qs('.hamburger-menu');
+const navLinks = qs('.nav-links');
+const featureSpeaker = qs('.speakers-container');
 
-const mobileMenu = qs('.hamburger-menu')
-const navLinks = qs('.nav-links')
-const featureSpeaker = qs('.speakers-container')
-
-
-mobileMenu.addEventListener('click', ()=> {
-  mobileMenu.classList.toggle('is-active')
+mobileMenu.addEventListener('click', () => {
+  mobileMenu.classList.toggle('is-active');
   navLinks.classList.toggle('is-active');
 });
 
 navLinks.addEventListener('click', () => {
-  mobileMenu.classList.toggle('is-active')
+  mobileMenu.classList.toggle('is-active');
   navLinks.classList.toggle('is-active');
-})
-
+});
 
 Object.keys(speakers).forEach((eachSpeaker) => {
   if (Object.hasOwnProperty.call(speakers, eachSpeaker)) {
-    const speaker = speakers[eachSpeaker]
+    const speaker = speakers[eachSpeaker];
     featureSpeaker.innerHTML += `<div class="each-speaker">
     <div class="speaker-img-holder">
       <img
@@ -45,6 +36,6 @@ Object.keys(speakers).forEach((eachSpeaker) => {
         ${speaker.description}
       </p>
     </article>
-  </div>`
+  </div>`;
   }
 });
