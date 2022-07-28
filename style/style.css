@@ -617,6 +617,7 @@ a {
 
 @media (min-width: 768px) {
   .upper-nav {
+    display: block;
     background-color: #272a31;
     height: 23px;
   }
